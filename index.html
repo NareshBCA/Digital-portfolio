@@ -1,188 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #84a6e9;
-        }
-
-        header {
-            background-color:royalblue;
-            color:darkturquoise;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="./Naresh.K.jpeg" alt="Your Profile Picture" class="profile-picture">
-            <h1>Naresh K</h1>
-            <p> Am Web Developer</p>
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
-    </nav>
-
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I'm a <b>web development</b> expert who is passionate
-                about creating dynamic and user-friendly,
-                responsive websites that enhance user experence and engagement. 
-               
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>Bharathithasan University  - BCA</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>C</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>DBMS</li>
-                </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">Personal portfolio</a></li>
-                <li><a href="#">College Portal</a></li> 
-                <!-- Add more project links here -->
+                                            <!-- Header Section -->
+    <div class="header">
+        <div class="nav-container">
+            <h1 class="logo">Naresh K</h1>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </section>
-
-    <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <h2>Resume</h2>
-            <a href="./file.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
+    </div>
+                                            <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero_imgs">
+            <img src="./n.jpeg" alt="Naresh" class="hero_img">
         </div>
-        
-    </section>
+        <div class="hero-content">
+            <h1>Hi, I'm Naresh</h1>
+            <h2>Full-Stack Developer</h2>
+            <p>Passionate about creating beautiful, functional web applications</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-button">View My Work</a>
+                <a href="./Naresh Resume.pdf" target="_blank" class="cta-button">My Resume</a>
+            </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Naresh K</p>
-    </footer>
+                                            <!-- About Section -->
+    <div id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <ul>
+                    <li>Aspiring Full Stack Developer with hands-on experience in React, Python, and FastAPI.</li>
+                    <li>Passionate about creating user-friendly interfaces and optimizing web performance</li>
+                    <li>Skilled in building RESTful APIs and implementing authentication systems.</li>
+                    <li>Strong understanding of frontend and backend integration. </li>
+                    <li>Experienced in working with MySQL databases</li>
+                    <li>Committed to clean coding practices and writing maintainable code</li>
+                    <li>Seeking an entry-level role to apply and grow technical skills</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+                                            <!-- Education Section -->
+    <div id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <ul>
+                    <li>
+                        <strong>Bachelor of Science in Computer Application</strong>
+                        <br>Bharathidasan University | 2023-2026
+                    </li>
+                    <li>
+                        <strong>Full-Stack Web Development</strong>
+                        <br>Vebbox | 2026 | Certificate of Completion
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
+                                            <!-- Technical Skills Section -->
+    <div id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Frontend Technologies</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Technologies</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>RESTful APIs</li>
+                        <li>FastAPI</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Tools</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>Git & GitHub</li>
+                        <li>AWS Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+                                            <!-- Projects Section -->
+    <div id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-content">
+                <div class="project-category">
+                    <h3>E-Commerce Platform</h3>
+                    <ul>
+                        <li>Full-stack web application built with React and Node.js</li>
+                        <li>Integrated payment processing with Stripe API</li>
+                        <li>Implemented user authentication and authorization</li>
+                        <li>Responsive design optimized for mobile devices</li>
+                        <li>Technologies: React, Node.js, MongoDB, Express</li>
+                    </ul>
+                </div>
+                <div class="project-category">
+                    <h3>Task Management App</h3>
+                    <ul>
+                        <li>Real-time collaboration features using WebSockets</li>
+                        <li>Drag-and-drop interface for task organization</li>
+                        <li>Progressive Web App with offline functionality</li>
+                        <li>Technologies: React</li>
+                    </ul>
+                </div>
+                <div class="project-category">
+                    <h3>Weather Dashboard</h3>
+                    <ul>
+                        <li>Interactive dashboard displaying weather data</li>
+                        <li>Integration with OpenWeatherMap API</li>
+                        <li>Location-based services and geolocation</li>
+                        <li>Chart.js for data visualization</li>
+                        <li>Technologies: JavaScript, Chart.js, REST APIs, CSS3</li>
+                    </ul>
+                </div>
+                <div class="project-category">
+                    <h3>Portfolio Website</h3>
+                    <ul>
+                        <li>Responsive portfolio showcasing development projects</li>
+                        <li>Custom animations and transitions</li>
+                        <li>SEO optimized with meta tags and structured data</li>
+                        <li>Performance optimized with lazy loading</li>
+                        <li>Technologies: HTML5, CSS3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <!-- Contact Section -->
+    <div id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <p>Let's connect and discuss your next project!</p>
+                <div class="contact-info">
+                    <p><a href="mailto:nareshbca2006@gmail.com" target="_blank"><strong>Email:</strong> nareshbca2006@gmail.com</a></p>
+                    <p><strong>Phone:</strong> +91 9994898494</p>
+                    <p><a href="https://www.linkedin.com/in/naresh-bca" target="_blank"><strong>LinkedIn:</strong> https://www.linkedin.com/in/naresh-bca</a></p>
+                    <p><a href="https://github.com/NareshBCA" target="_blank"><strong>GitHub:</strong> https://github.com/NareshBCA</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                                            <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy; 2026 Naresh. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
