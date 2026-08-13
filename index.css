@@ -83,18 +83,19 @@ li:hover::after{
     height: 70%;
     width: 45%;
     justify-content: start;
-    line-height: 40px;
 }
 
 .hero2{
     height: 70%;
     width: 45%;
-    /* justify-content: end; */
 }
 
 .hero_cont{
     font-size: 40px;
-    /* margin: 0px; */
+}
+
+.hero_para{
+    line-height:40px;
 }
 
 .blue{color: var(--blue);}
